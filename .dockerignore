@@ -1,0 +1,4 @@
+node_modules
+npm-debug.log
+.git
+src/data/*.json  # if you prefer to regenerate inside container

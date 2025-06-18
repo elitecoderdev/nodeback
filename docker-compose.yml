@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  api:
+    build: .
+    ports:
+      - '8000:8000'
+    environment:
+      - NODE_ENV=development
+      - PORT=8000
+    # For live code reload in dev:
+    volumes:
+      - .:/app
+      - /app/node_modules
+    command: npm run dev
